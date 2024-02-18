@@ -1,5 +1,6 @@
 using BusinessLayer.Container;
 using DataAccessLayer.Concrete;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using EntityLayer.Concrete;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
@@ -8,7 +9,13 @@ using TraversalCoreProje.CQRS.Handlers.DestinationHandlers;
 using TraversalCoreProje.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<GetDestinationByIDQueryHandler>();
 builder.Services.AddScoped<GetAllDestinationQueryHandler>();
+builder.Services.AddScoped<CreateDestinationCommandHandler>();
+builder.Services.AddScoped<RemoveDestinationCommandHandler>();
+builder.Services.AddScoped<UpdateDestinationCommandHandler>();
+
+
 builder.Services.AddLogging(x =>
 {
 
@@ -87,13 +94,8 @@ app.UseEndpoints(endpoints =>
       name: "areas",
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
+	
 });
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-      name: "areas",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
-});
+
 
 app.Run();

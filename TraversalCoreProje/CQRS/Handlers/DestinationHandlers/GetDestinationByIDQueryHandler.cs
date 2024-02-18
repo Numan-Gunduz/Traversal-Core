@@ -4,11 +4,11 @@ using TraversalCoreProje.CQRS.Results.DestinationResults;
 
 namespace TraversalCoreProje.CQRS.Handlers.DestinationHandlers
 {
-	public class GetDestinationByIDQueryHandle
+	public class GetDestinationByIDQueryHandler
 	{
 		private readonly Context _context;
 
-		public GetDestinationByIDQueryHandle(Context context)
+		public GetDestinationByIDQueryHandler(Context context)
 		{
 			_context = context;
 		}
@@ -19,7 +19,8 @@ namespace TraversalCoreProje.CQRS.Handlers.DestinationHandlers
 			{
 				DestinationID = values.DestinationID,
 				City = values.City,
-				Daynight = values.DayNight
+				Daynight = values.DayNight,
+				Price = values.Price,
 			};
 		}
 
