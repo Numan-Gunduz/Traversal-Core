@@ -39,7 +39,12 @@ namespace BusinessLayer.Concrete
            _destinationDal.Delete(t);
         }
 
-        public void TUpdate(Destination t)
+		public Destination TGetDestinationWithGuide(int id)
+		{
+            return _destinationDal.GetDestinationWithGuide(id);
+		}
+
+		public void TUpdate(Destination t)
         {
             _destinationDal.Update(t);
         }
