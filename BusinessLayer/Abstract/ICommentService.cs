@@ -12,5 +12,7 @@ namespace BusinessLayer.Abstract
         List<Comment> GetDestinationByID(int id);
         List<Comment> TGetListCommentWithDestination();
 
+        List<Comment> TGetListCommentWithDestinationandUser(int id);
+
 	}
 }

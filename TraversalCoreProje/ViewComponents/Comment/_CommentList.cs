@@ -8,8 +8,11 @@ namespace TraversalCoreProje.ViewComponents.Comment
     {
         CommentManager commentManager = new CommentManager(new EfCommentDal());
         public IViewComponentResult Invoke(int id)
+
         {
-            var values = commentManager.GetDestinationByID(id);
+            var values = commentManager.TGetListCommentWithDestinationandUser(id);
+            ViewBag.commentcount = values.Count();
+
             return View(values);
         }
     }
