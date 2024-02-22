@@ -14,6 +14,6 @@
         public int VisitorID { get; set; }
         public Ecity City { get; set; }
         public int CityVisitCount { get; set; }
-        public DateTime VisitDate { get; set; }
+        public DateTime VisitDate { get; set; } = DateTime.UtcNow;
     }
 }
