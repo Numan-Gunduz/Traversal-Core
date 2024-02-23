@@ -1,0 +1,54 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+
+@* @section Scripts
+{
+	<script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(() => {
+
+			var connection = new signalR.HubConnectionBuilder()
+				.withUrl("http://localhost:5134/VisitorHub")
+
+				.build();
+			$("#connecitonStatus").text(status);
+
+			connection.start().then(() => {
+				$("#connecitonStatus").text(status);
+
+			}).catch((err) => { console.log(err) });
+
+		})
+	</script>
+} *@
+<div class="container">
+    <br />
+    <div class="alert alert-warning">
+        Bağlantınızın Durumu: <b id="connectionStatus"></b>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(() => {
+
+            var connection = new signalR.HubConnectionBuilder()
+                .withUrl("http://localhost:5134/VisitorHub")
+                .build();
+
+            connection.onclose(() => {
+                $("#connectionStatus").text("Bağlantı Kesildi");
+            });
+
+            connection.start().then(() => {
+                $("#connectionStatus").text("Bağlandı");
+            }).catch((err) => {
+                console.log(err);
+                $("#connectionStatus").text("Bağlantı Hatası");
+            });
+        });
+    </script>
+}
