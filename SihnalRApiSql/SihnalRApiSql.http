@@ -1,0 +1,6 @@
+@SihnalRApiSql_HostAddress = http://localhost:5014
+
+GET {{SihnalRApiSql_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
