@@ -46,6 +46,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\member\assets\.DS_Store" />
+    <None Include="wwwroot\member\gulp-tasks\.DS_Store" />
+    <None Include="wwwroot\member\src\.DS_Store" />
+    <None Include="wwwroot\member\src\js\.DS_Store" />
+    <None Include="wwwroot\member\src\js\core\.DS_Store" />
+    <None Include="wwwroot\member\src\js\core\libraries\.DS_Store" />
+    <None Include="wwwroot\member\src\js\scripts\.DS_Store" />
+    <None Include="wwwroot\member\src\js\scripts\charts\.DS_Store" />
+    <None Include="wwwroot\member\src\js\scripts\charts\chartjs\.DS_Store" />
+    <None Include="wwwroot\member\src\js\scripts\pages\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\bootstrap-extended\.sass-cache\b161be96449978188ab92f1e37bbeda94f2952ce\buttons.scssc" />
+    <None Include="wwwroot\member\src\scss\components\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\core\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\core\layouts\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\core\menu\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\core\menu\menu-types\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\pages\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\plugins\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\plugins\charts\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\plugins\forms\.DS_Store" />
+    <None Include="wwwroot\member\src\scss\plugins\ui\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\fonts\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\fonts\flag-icon-css\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\images\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\images\backgrounds\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\images\portrait\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\js\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\js\scripts\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\vendors\.DS_Store" />
+    <None Include="wwwroot\member\theme-assets\vendors\css\.DS_Store" />
     <None Include="wwwroot\sneat-1.0.0\.github\workflows\handle-new-issue-comment.yml" />
     <None Include="wwwroot\sneat-1.0.0\.github\workflows\handle-new-issue.yml" />
     <None Include="wwwroot\sneat-1.0.0\.github\workflows\issue-staler.yml" />
