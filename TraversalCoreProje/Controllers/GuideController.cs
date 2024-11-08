@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TraversalCoreProje.Controllers
 {
-	public class GuideController : Controller
+    public class GuideController : Controller
 	{
 		[AllowAnonymous]
 		public IActionResult Index()
